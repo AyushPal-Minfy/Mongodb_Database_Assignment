@@ -198,14 +198,3 @@ const futureDate = new Date();<br>
 futureDate.setDate(futureDate.getDate() + 7);<br>
 <br>
 db.tasks.updateMany({},{ $set: { dueDate: futureDate } });<br>
-{<br>
-  acknowledged: true,<br>
-  insertedId: null,<br>
-  matchedCount: 0,<br>
-  modifiedCount: 0,<br>
-  upsertedCount: 0<br>
-}<br>
-const futureDate = new Date();<br>
-futureDate.setDate(futureDate.getDate() + 7);<br>
-<br>
-db.Task.updateMany
